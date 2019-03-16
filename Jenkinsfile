@@ -2,7 +2,7 @@
 
 node {
 
-    try {
+
         stage 'Checkout'
             checkout scm
 
@@ -19,8 +19,6 @@ node {
         stage 'Deploy'
             sh './deployment/deploy_prod.sh'
 
-       
-    }
 
 
     
